@@ -33,39 +33,67 @@
     style="width: 100%; display: block;"
   >
 
-  <!-- Placeholder box (420px x 785px) -->
+  <!-- Placeholder box (785px x 420px) -->
   <div
     style="
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      /* Fixed placeholder dimensions */
       width: 785px;
       height: 420px;
       background-color: #FFF;       /* White background */
-      border: 2px solid #000;       /* 2px (or 2pt) black border */
-      box-sizing: border-box;       /* Includes border in the total width/height */
+      border: 2px solid #000;       /* 2px black border */
+      box-sizing: border-box;
 
-      display: flex;               /* Flex container to center content inside */
+      /* Flex to stack items vertically */
+      display: flex;
       flex-direction: column;
-      align-items: center;         /* Centers items horizontally */
-      justify-content: center;     /* Centers items vertically */
+      align-items: center;
+      justify-content: flex-start;  /* Items start at the top */
     "
   >
-    <!-- Placeholder text (inside the box) -->
-    <h2 style="
-      margin: 0;
-      font-family: 'Lexend', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-    ">
-      Placeholder Text
+    <!-- Logo, 48px from top edge -->
+    <img
+      src="images/logo.svg"
+      alt="Chain Amp Logo"
+      style="
+        margin-top: 48px;          /* 48px space from top line of the box */
+        margin-bottom: 20px;       /* 20px space before the H2 text */
+      "
+    >
+
+    <!-- H2 text (bold, larger font) -->
+    <h2
+      style="
+        margin: 0;
+        margin-bottom: 10px;       /* Slight space before the H3 */
+        font-family: 'Lexend', sans-serif;
+        font-size: 24px;
+        font-weight: 700;          /* Bold */
+      "
+    >
+     The amplification platform for Web3 communities.
     </h2>
-    
+
+    <!-- H3 text (16px, lighter weight) -->
+    <h3
+      style="
+        margin: 0;
+        margin-bottom: 20px;       /* Space before the button */
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        font-weight: 400;          /* Lighter than H2 */
+      "
+    >
+      We match the most in-demand Web3 projects with the most active community members, who get rewarded for the engagement and buzz they create around the project.
+    </h3>
+
     <!-- Contact Us button -->
     <button
       style="
-        margin-top: 20px;
         background-color: #65E3B9;
         border: 1px solid #06B2BC;
         border-radius: 24px;
@@ -82,6 +110,5 @@
   </div>
 
 </section>
-
 </body>
 </html>
