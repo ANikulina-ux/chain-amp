@@ -19,70 +19,69 @@
     >
   </header>
 
- <section style="
+<section style="
   position: relative;
   width: 100%;
-  margin: 0; 
+  margin: 0;
   padding: 0;
 ">
 
-  <!-- Задний план: основной баннер на всю ширину -->
+  <!-- Background banner -->
   <img 
     src="images/banner.png" 
     alt="Chain Amp Banner" 
     style="width: 100%; display: block;"
   >
 
-  <!-- Блок для второй картинки и кнопки -->
-  <div 
+  <!-- Placeholder box (420px x 785px) -->
+  <div
     style="
-      position: absolute; 
-      left: 50%; 
+      position: absolute;
       top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
-      /* Центрируем весь этот блок и по горизонтали, и по вертикали */
-      text-align: center; 
+      width: 420px;
+      height: 785px;
+      background-color: #FFF;       /* White background */
+      border: 2px solid #000;       /* 2px (or 2pt) black border */
+      box-sizing: border-box;       /* Includes border in the total width/height */
+
+      display: flex;               /* Flex container to center content inside */
+      flex-direction: column;
+      align-items: center;         /* Centers items horizontally */
+      justify-content: center;     /* Centers items vertically */
     "
   >
-    <!-- Контейнер, размеры которого = размеры второй картинки -->
-    <div 
+    <!-- Placeholder text (inside the box) -->
+    <h2 style="
+      margin: 0;
+      font-family: 'Lexend', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+    ">
+      Placeholder Text
+    </h2>
+    
+    <!-- Contact Us button -->
+    <button
       style="
-        position: relative; 
-        display: inline-block;
+        margin-top: 20px;
+        background-color: #65E3B9;
+        border: 1px solid #06B2BC;
+        border-radius: 24px;
+        color: #FFF;
+        font-family: 'Lexend', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 30px;
+        cursor: pointer;
       "
     >
-      <!-- Вторая картинка (header.png) -->
-      <img
-        src="images/header.png"
-        alt="Header Teaser"
-        style="display: block; max-width: 100%;"
-      >
-
-      <!-- Кнопка на 48px от нижнего края второй картинки -->
-      <button
-        style="
-          position: absolute;
-          bottom: 48px;
-          left: 50%;
-          transform: translateX(-50%);
-
-          /* Стили кнопки */
-          background-color: #65E3B9;
-          border: 1px solid #06B2BC;
-          border-radius: 24px;
-          color: #FFF;
-          font-family: 'Lexend', sans-serif;
-          font-weight: 700;
-          font-size: 18px;
-          padding: 16px 30px;
-          cursor: pointer;
-        "
-      >
-        Contact Us
-      </button>
-    </div>
+      Contact Us
+    </button>
   </div>
 
 </section>
+
 </body>
 </html>
