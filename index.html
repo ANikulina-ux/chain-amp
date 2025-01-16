@@ -19,51 +19,62 @@
     >
   </header>
 
- <section 
-  class="banner" 
-  style="position: relative; width: 100%;"
->
-  <!-- First layer: main banner -->
-  <img
-    src="images/banner.png"
-    alt="Chain Amp Banner"
+ <section style="
+  position: relative;
+  width: 100%;
+  margin: 0; 
+  padding: 0;
+">
+
+  <!-- Задний план: основной баннер на всю ширину -->
+  <img 
+    src="images/banner.png" 
+    alt="Chain Amp Banner" 
     style="width: 100%; display: block;"
   >
 
-  <!-- Second layer: header.png and Contact Us button -->
-  <div
+  <!-- Блок для второй картинки и кнопки -->
+  <div 
     style="
-      position: absolute;
+      position: absolute; 
+      left: 50%; 
       top: 50%;
-      left: 50%;
       transform: translate(-50%, -50%);
-      text-align: center;
+      /* Центрируем весь этот блок и по горизонтали, и по вертикали */
+      text-align: center; 
     "
   >
-    <!-- Контейнер под вторую картинку -->
-    <div style="position: relative; display: inline-block;">
-      <!-- Картинка поверх banнера -->
+    <!-- Контейнер, размеры которого = размеры второй картинки -->
+    <div 
+      style="
+        position: relative; 
+        display: inline-block;
+      "
+    >
+      <!-- Вторая картинка (header.png) -->
       <img
         src="images/header.png"
         alt="Header Teaser"
-        style="max-width: 80%; display: block;"
+        style="display: block; max-width: 80%;"
       >
 
-      <!-- Кнопка "Contact Us" -->
-      <button 
+      <!-- Кнопка на 64px от нижнего края второй картинки -->
+      <button
         style="
           position: absolute;
-          bottom: 80px;
+          bottom: 64px;
           left: 50%;
           transform: translateX(-50%);
+
+          /* Стили кнопки */
           background-color: #65E3B9;
           border: 1px solid #06B2BC;
-          border-radius: 24px;       /* Закруглённые углы */
+          border-radius: 24px;
           color: #FFF;
           font-family: 'Lexend', sans-serif;
-          font-weight: 700;         /* Жирный шрифт */
-          font-size: 18px;          /* 18px ~ 18pt */
-          padding: 16px 30px;       /* 16px сверху/снизу, 30px слева/справа */
+          font-weight: 700;
+          font-size: 18px;
+          padding: 16px 30px;
           cursor: pointer;
         "
       >
@@ -71,6 +82,7 @@
       </button>
     </div>
   </div>
+
 </section>
 </body>
 </html>
