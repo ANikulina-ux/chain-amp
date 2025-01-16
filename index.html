@@ -15,12 +15,29 @@
     >
   </header>
 
-  <section class="banner">
-    <img
-      src="images/banner.png"
-      alt="Chain Amp Banner"
-      style="width: 100%; display: block;"
-    >
-  </section>
+ <section 
+  class="banner" 
+  style="position: relative; width: 100%;"
+>
+  <!-- First layer: main banner -->
+  <img
+    src="images/banner.png"
+    alt="Chain Amp Banner"
+    style="width: 100%; display: block;"
+  >
+
+  <!-- Second layer: top image, centered -->
+  <img
+    src="images/header.png"
+    alt="Header Teaser"
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 80%;
+    "
+  >
+</section>
 </body>
 </html>
